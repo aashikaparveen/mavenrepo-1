@@ -1,4 +1,4 @@
-version: "3.2"
+version: "3"
 services:
   web:
     # replace username/repo:tag with your name and image details
@@ -11,9 +11,8 @@ services:
           memory: 50M
       restart_policy:
         condition: on-failure
-    ports:
-       - target:  80
-         published:  8886
-         protocol:  tcp
-         mode:  host
-
+     ports:
+        - "8889:8889"
+     volumes:
+        - "/var/run/docker.sock:/var/run/docker.sock"
+       
