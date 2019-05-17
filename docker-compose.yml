@@ -11,4 +11,7 @@ services:
           memory: 50M
       restart_policy:
         condition: on-failure
+    ports:
+        - published: 8886
+          mode: host
    
