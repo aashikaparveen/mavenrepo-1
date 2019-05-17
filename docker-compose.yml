@@ -13,7 +13,5 @@ services:
         condition: on-failure
     ports:
         -"4002:4002"
-    networks:
-      - webnet
-networks:
-  webnet:
+    volumes:
+        - "/var/run/docker.sock:/var/run/docker.sock"
