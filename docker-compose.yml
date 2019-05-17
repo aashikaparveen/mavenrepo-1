@@ -12,6 +12,6 @@ services:
       restart_policy:
         condition: on-failure
     ports:
-        - published: 8886
+        - published: "8886"
           mode: host
    
