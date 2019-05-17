@@ -11,8 +11,6 @@ services:
           memory: 50M
       restart_policy:
         condition: on-failure
-    ports:
-      - "4001:4001"
     networks:
       - webnet
 networks:
