@@ -1,4 +1,4 @@
-version: "3"
+version: "3.2"
 services:
   web:
     # replace username/repo:tag with your name and image details
@@ -10,5 +10,9 @@ services:
           cpus: "0.1"
           memory: 50M
     ports:
-        -"8889:8889"
+         - target: 8889
+           published: 8889
+           protocol: tcp
+           mode: host
+
      
