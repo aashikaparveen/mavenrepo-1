@@ -6,6 +6,6 @@ services:
     deploy:
       replicas: 4
     ports:
-         - "8005:8080"
+         - "8003:8080"
 
      
