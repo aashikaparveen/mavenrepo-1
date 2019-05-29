@@ -9,7 +9,7 @@ public class Student {
 	private String percentage;
 	private String yearPassed;
 	
-	public Student(){}
+	public Student(){int i=0;}
 
 	public int getStudentId() {
 		return studentId;
